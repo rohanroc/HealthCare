@@ -133,3 +133,22 @@ function renderOtherPage() {
     // Navigate to the other HTML page
     window.location.href = "home-page.html";
 }
+
+
+
+document.getElementById('paymentForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var cardNumber = document.getElementById('cardNumber').value;
+    var expiryDate = document.getElementById('expiryDate').value;
+    var cvv = document.getElementById('cvv').value;
+
+    // Validate the form fields here (e.g., card number format, expiry date, etc.)
+
+    // Process the payment using a server-side API or payment processing service
+
+    // Display a success message or redirect to a thank you page
+    alert('Payment successful!');
+});
+
