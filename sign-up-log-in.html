@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+</head>
+
+<body class="text-black bg-[#cfd6ff]">
+    <header>
+        <nav class="flex justify-between items-center">
+            <div
+                class="logo text-4xl font-extrabold font-mono m-10 bg-gradient-to-r from-cyan-600 to-blue-800  text-transparent bg-clip-text">
+                HealthCare
+            </div>
+            <div class="hidden">
+                <ul class="flex space-x-8 uppercase">
+                    <li><a href="home-page.html" class="text-2xl font-bold font-mono hover:underline">Home</a>
+                    </li>
+                    <li><a href="#services" class="text-2xl font-bold font-mono hover:underline">Services</a>
+                    </li>
+                    <li><a href="about-us.html" class="text-2xl font-bold font-mono hover:underline">About-US</a>
+                    </li>
+                    <li><a href="" class="text-2xl font-bold font-mono hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <i class="bi bi-brightness-high-fill text-3xl cursor-pointer self-center mr-10" id="toggleDark"></i>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <img src="images/3dpic3.png" alt="" class="w-[17%] m-auto absolute top-2 left-[44%]">
+        <div
+            class="w-[30%] flex flex-col border-2 border-white rounded-xl m-auto h-[450px] bg-gradient-to-r from-cyan-500 to-blue-500 mt-[126px] text-black">
+            <h1 class="text-2xl font-bold text-center my-5">Create Account</h1>
+            <div class="flex space-x-2 justify-center">
+                <input type="text" placeholder="Firstname"
+                    class="py-1 bg-transparent border-b-2 border-black text-lg placeholder:text-black">
+                <input type="text" placeholder="Lastname"
+                    class="py-1 bg-transparent border-b-2 border-black text-lg placeholder:text-black">
+            </div>
+            <input type="email" placeholder="Email"
+                class="bg-transparent border-b-2 border-black mx-6 my-5 py-1 text-lg placeholder:text-black">
+            <input type="password" placeholder="Password"
+                class="bg-transparent border-b-2 border-black mx-6 my-5 py-1 text-lg placeholder:text-black" id="check">
+            <input type="password" placeholder="Re-type password"
+                class="bg-transparent border-b-2 border-black mx-6 my-5 py-1 text-lg placeholder:text-black placeholder:required:"
+                id="check1">
+            <div class="text-center">
+                <button
+                    class="w-40 border-white border-2 py-2 rounded-xl bg-transparent font-bold ml-4 my-7 hover:border-black text-black"
+                    onclick="renderOtherPage()">Sign In</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
